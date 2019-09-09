@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4945D933-16D1-43B8-9923-456B3137C326}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoRestaurante</RootNamespace>
+    <AssemblyName>ProyectoRestaurante</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DialogPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogPago.Designer.cs">
+      <DependentUpon>DialogPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogProducto.Designer.cs">
+      <DependentUpon>DialogProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditos.Designer.cs">
+      <DependentUpon>frmCreditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listTIcket.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPrincipal.Designer.cs">
+      <DependentUpon>ViewPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DialogPago.resx">
+      <DependentUpon>DialogPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogProducto.resx">
+      <DependentUpon>DialogProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditos.resx">
+      <DependentUpon>frmCreditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewPrincipal.resx">
+      <DependentUpon>ViewPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="View.Principal">
+      <SubType>Form</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lantern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consulting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\es-nombres-caligrafia-29645-23612-24343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rice2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodles-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken-wings.min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spring-rolls-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octopus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ribs-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sushi-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breaded-shrimp-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shrimp-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish-min.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\lantern1.png" />
+    <None Include="Resources\can.png" />
+    <Content Include="Resources\platillos\can.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\rice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\ribs1.png" />
+    <None Include="Resources\fish1.png" />
+    <None Include="Resources\breaded-shrimp1.png" />
+    <None Include="Resources\sushi1.png" />
+    <None Include="Resources\noodles1.png" />
+    <None Include="Resources\spring-rolls1.png" />
+    <None Include="Resources\orange1.png" />
+    <None Include="Resources\octopus1.png" />
+    <None Include="Resources\shrimp1.png" />
+    <None Include="Resources\chicken-wings1.png" />
+    <None Include="Resources\sushi.png" />
+    <None Include="Resources\ribs.png" />
+    <None Include="Resources\fish.png" />
+    <None Include="Resources\breaded-shrimp.png" />
+    <None Include="Resources\noodles.png" />
+    <None Include="Resources\spring-rolls.png" />
+    <None Include="Resources\orange.png" />
+    <None Include="Resources\octopus.png" />
+    <None Include="Resources\shrimp.png" />
+    <None Include="Resources\chicken-wings.png" />
+    <Content Include="Resources\platillos\breaded-shrimp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\chicken-wings.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\fish.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\noodles.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\octopus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\orange.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\ribs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\shrimp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\spring-rolls.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\platillos\sushi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
